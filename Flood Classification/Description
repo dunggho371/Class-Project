@@ -1,0 +1,50 @@
+README
+Introduction
+This repository contains code for training an image classification model using the EfficientNetB7 architecture with TensorFlow. The model is trained on a custom dataset for binary classification.
+
+Dataset
+The dataset used in this project is available in CSV format. The training dataset contains image IDs and corresponding labels for binary classification. The test dataset includes only image IDs. The dataset is not included in this repository but can be obtained separately.
+
+Requirements
+Make sure you have the following libraries installed before running the code:
+
+numpy
+pandas
+opencv-python (cv2)
+tensorflow
+scikit-learn
+You can install these dependencies using pip:
+
+Copy code
+pip install numpy pandas opencv-python tensorflow scikit-learn
+Code Description
+The code consists of the following main sections:
+
+Data Preparation: Loading and preprocessing the training and validation images. The data is split into training and validation sets using scikit-learn's train_test_split.
+
+Data Augmentation: Image data augmentation is performed using ImageDataGenerator from TensorFlow. Augmented batches of images and labels are generated using the custom function generate_augmented_batch.
+
+Model Architecture: The EfficientNetB7 model is loaded with weights pre-trained on ImageNet. Some layers in the base model are frozen, and a new classification head is added on top. The model is compiled with an Adam optimizer and binary cross-entropy loss.
+
+Training: The model is trained using the training dataset and validated on the validation dataset. Early stopping is used to prevent overfitting.
+
+Testing: The trained model is used to predict labels for the test images, and the results are saved in a CSV file.
+
+Usage
+To use this code, follow these steps:
+
+Obtain the dataset: Ensure you have the training and test datasets in CSV format. The training dataset should have columns for 'id' (image IDs) and 'label' (binary labels).
+
+Update the paths: Update the devset_path, devset_images_folder, testset_path, and testset_images_folder variables with the correct file paths.
+
+Install the required libraries: Make sure you have all the required libraries installed as mentioned in the Requirements section.
+
+Run the code: Execute the code to start training the model and generating predictions for the test images.
+
+Notes
+The code uses TensorFlow's tf.data.Dataset to efficiently load and preprocess data during training and validation.
+The EfficientNetB7 model is fine-tuned by unfreezing additional layers specified by the variable fine_tune_at.
+The learning rate schedule is defined using PiecewiseConstantDecay to adjust the learning rate during training.
+The model is trained with data augmentation using the ImageDataGenerator.
+The code includes early stopping to prevent overfitting during training.
+Feel free to modify the code according to your specific dataset and requirements. Happy coding!
