@@ -5,6 +5,7 @@ This repository contains code for training an image classification model using t
 
 ## Dataset
 The dataset used in this project is available in CSV format. The training dataset contains image IDs and corresponding labels for binary classification. The test dataset includes only image IDs. The dataset is not included in this repository but can be obtained separately.
+Check out the data here: https://www.kaggle.com/datasets/dungho371/dpl-compe
 
 ## Requirements
 Make sure you have the following libraries installed before running the code:
