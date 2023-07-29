@@ -1,0 +1,66 @@
+SQL Project - Student Management System:
+
+Description:
+
+Welcome to my GitHub repository for the "Student Management System" project in the SQL Server environment. This project is designed to manage information about departments, students, and their academic results within a university.
+
+Key Components:
+
+Create Database:
+The project begins by creating a database named "QuanLyDiemSV" (the name can be customized). This database contains tables related to department categories, student profiles, course catalogs, and student academic records.
+
+Department Category Table (DMKhoa):
+This table stores information about different departments within the university, including department codes and names.
+
+Student Profile Table (DMSV):
+This table stores information about students, including student IDs, first and last names, gender, date of birth, place of birth, department code (the department the student belongs to), and the student's scholarship details.
+
+Course Catalog Table (DMMH):
+This table stores information about courses, including course codes, course names, and the number of class hours for each course.
+
+Result Table (KetQua):
+This table records students' academic results, including student IDs, course codes, exam attempt number, and the achieved score.
+
+Setting Foreign Key Constraints:
+The project establishes foreign key constraints to ensure data integrity between related tables. Specifically, foreign key constraints are set between the DMSV and DMKhoa tables, as well as between the KetQua table and DMSV, DMMH tables.
+
+Data Insertion:
+Sample data for departments, students, courses, and academic results has been added to the respective tables in the database.
+
+Note:
+This project is an example of how to create a database and perform basic SQL queries. You can expand the project by adding new features, more complex queries, or a user interface to interact with the database.
+
+GitHub Project - Northwind Queries:
+
+Description:
+
+Welcome to my GitHub repository for the "Northwind Queries" project. This project involves various SQL queries performed on the Northwind database, a sample database provided by Microsoft.
+
+Key Queries:
+
+Top N Customers by Total Sales:
+Retrieve the top N customers with the highest total sales from the Northwind database.
+
+Products Out of Stock:
+Retrieve a list of products that are currently out of stock in the Northwind database.
+
+Employees by Region:
+Retrieve a list of employees and their respective regions based on the Northwind database.
+
+Order Details for a Specific Customer:
+Retrieve order details for a specific customer identified by their CustomerID in the Northwind database.
+
+Monthly Sales Overview:
+Obtain an overview of monthly sales, including the total revenue and the number of orders, from the Northwind database.
+
+High-Value Orders:
+Identify high-value orders with a total value above a specified threshold from the Northwind database.
+
+Products and Categories:
+Retrieve a list of products and their corresponding categories from the Northwind database.
+
+Note:
+This project showcases different SQL queries performed on the Northwind sample database. You can further explore the database and create additional queries to analyze and extract relevant information.
+
+Please feel free to explore the projects, provide feedback, and suggest improvements. Happy coding!
+
